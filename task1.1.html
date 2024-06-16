@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <td><input type="text" name="fname"></td>
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td><input type="text" name="lname"></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+      <th>Re-enter Password</th>
+      <td><input type="password" name="re-password"></td>
+    </tr>
+    <tr>
+      <th>Gender:</th>
+      <td>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+      </td>
+    </tr>
+    <tr>
+      <th>Age:</th>
+      <td><input type="number" name="age"></td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td><input type="tel" name="phone"></td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td><textarea name="address"></textarea></td>
+    </tr>
+    <tr>
+      <th>State</th>
+      <td><input type="text" name="state"></td>
+    </tr>
+    <tr>
+      <th>Country</th>
+      <td>
+        <select name="country">
+          <option value="Choose your country">Choose your country</option>
+          <option value="English">English</option>
+          <option value="Kannada">Kannada</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Telugu">Telugu</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>Languages known</th>
+      <td>
+        <input type="checkbox" name="lang" value="English"> English
+        <input type="checkbox" name="lang" value="Kannada"> Kannada
+        <input type="checkbox" name="lang" value="Hindi"> Hindi
+        <input type="checkbox" name="lang" value="Telugu"> Telugu
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="agree" value="agree"> Hereby I declare all the given details are true</td>
+      <td>Log in to Ethnus website</td>
+    </tr>
+  </table>
+  <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
